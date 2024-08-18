@@ -1,38 +1,95 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #121312;
+}
+
+h1{
+  font-size: 3rem;
+  color: black;
+  line-height: 1.2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background: white;
+  padding: 1.2rem;
+  width: 90vh;
+  margin: 8rem auto;
+  max-width: 35rem;
+  border-radius: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 1rem;
+}
+
+.text-input{
+  padding: 0.25rem;
+  font-size: 1.2rem;
+  background: lightcyan;
+  flex: 1 0 auto;
+  
+}
+
+.submit-btn{
+  background: purple;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: transparent;
+}
+
+.submit-btn:hover{
+  background: orange;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.25rem 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alert{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.alert.error{
+  background: red;
+  color: white;
+}
+
+.alert.success{
+  background: green;
+  color: white;
+}
+
+.btn{
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: purple;
 }
